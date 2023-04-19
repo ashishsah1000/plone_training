@@ -54,4 +54,14 @@ open two terminals and in one of them type `make start-backend` and in other `ma
 
 We did it we should have `volto` running on our port 3000. 
 
+Plone is running on port 8080 (backend). At `localhost:8080` you will see the clasic plone which is based on `python`. Feel free to use that if you want to
+use python for development. It will work same as the React version `volto`
+
+
+## chapter-two
+
+Now we have plone installed and running on our local machine. You will see the homepage and you can login with default credentials `admin` | `admin` 
+
+
+
 
