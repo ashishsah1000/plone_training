@@ -61,6 +61,53 @@ use python for development. It will work same as the React version `volto`
 ## chapter-two
 
 Now we have plone installed and running on our local machine. You will see the homepage and you can login with default credentials `admin` | `admin` 
+Plone uses the concept of component shadowing. You will see list of folders in the `omlette` folder in the frontend folder. Never change that directly. We will do anything in `src` folder but follow the same folder structure of the `omlette` folder. Suppose you can see that in `omlette>components>blocks>Navbar.jsx` exist. So if you want to change the `navbar` make the same folder structure in the `src` folder. Plone will read your `src` folder and replace its `navbar` to the `navbar` that you just created.
+
+Lets customize the `Navbar.jsx`
+
+```
+Code goes here
+```
+
+navbar component will be replaced. Now lets do the same for `Footer.jsx`. 
+
+```
+Code goes here
+```
+
+We did it we customized our two of the components. 
+Lets also change our logo.
+
+```
+Logo changing method
+```
+## chapter-three
+Now lets add few blocks. What is blocks ? These are components that you can insert into the website while editing a page. We will create our home page with few of the exisiting blocks. I have used the following blocks to achive this and it is present by default in plone.
+
+Now lets add our banner block so that we can use it whereever it is required ( I need in the first page )
+
+Creation of the custom banner block.
+
+```
+code goes here 
+```
+Now its time customize our `events blocks`. This we will achieve by Component Shadowing. So make a folder in this dir : `custom direoctory` and add the following lines of code.
+
+```
+Code goes here 
+```
+Now our events list component will show items in list.
+
+We learnt how to customize the existing components and how we can make our own and use anywhwere we want.
+
+## chapter-four
+
+Lets add a form that users can submit on an particular event.
+
+Loading....
+
+
+
 
 
 
