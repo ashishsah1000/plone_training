@@ -1,0 +1,13 @@
+body{
+    background:black;
+    color:ghostwhite;
+}
+.menu a{
+    color:grey !important;
+}
+.menu a:hover{
+    color:white !important;
+}
+a .active{
+       color:white !important;
+}
