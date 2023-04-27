@@ -14,6 +14,8 @@
  */
 
 // All your imports required for the config here BEFORE this line
+import { BannerEdit, BannerView } from '@package/components';
+import heroSVG from '@plone/volto/icons/hero.svg';
 import '@plone/volto/config';
 
 export default function applyConfig(config) {
@@ -22,6 +24,17 @@ export default function applyConfig(config) {
     isMultilingual: false,
     supportedLanguages: ['en'],
     defaultLanguage: 'en',
+  };
+  config.blocks.blocksConfig.banner = {
+    id: 'highlight',
+    title: 'Banner',
+    icon: heroSVG,
+    group: 'common',
+    view: BannerView,
+    edit: BannerEdit,
+    restricted: false,
+    mostUsed: true,
+    sidebarTab: 1,
   };
   return config;
 }

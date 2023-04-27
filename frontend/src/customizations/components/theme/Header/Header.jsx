@@ -66,7 +66,8 @@ class Header extends Component {
               }}
             >
               <div className="logo">
-                <Logo />
+                {/* <Logo /> */}
+                <h1>Logo</h1>
               </div>
               <Navigation pathname={this.props.pathname} />
             </div>
