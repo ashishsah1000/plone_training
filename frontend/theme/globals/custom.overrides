@@ -17,9 +17,7 @@ a .active{
 
 // for the banner component
 
-.banner-overlay{
 
-}
 .banner-content {
   text-align: center;
 }
