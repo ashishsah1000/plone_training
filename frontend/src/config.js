@@ -14,10 +14,10 @@
  */
 
 // All your imports required for the config here BEFORE this line
-import { BannerEdit } from '@package/components';
-import { BannerView } from '@package/components';
+import { BannerEdit, BannerView, StepsEdit, StepsView, EventListing } from '@package/components';
 
 import heroSVG from '@plone/volto/icons/hero.svg';
+import freedomSVG from '@plone/volto/icons/freedom.svg';
 import '@plone/volto/config';
 
 export default function applyConfig(config) {
@@ -38,5 +38,24 @@ export default function applyConfig(config) {
     mostUsed: true,
     sidebarTab: 1,
   };
+  config.blocks.blocksConfig.steps = {
+    id: 'steps',
+    title: 'Steps',
+    icon: freedomSVG,
+    group: 'common',
+    view: StepsView,
+    edit: StepsEdit,
+    restricted: false,
+    mostUsed: true,
+    sidebarTab: 1,
+  };
+  config.blocks.blocksConfig.listing.variations = [
+    ...config.blocks.blocksConfig.listing.variations,
+    {
+      id: 'EventListing',
+      title: 'Events',
+      template: EventListing,
+    },
+  ];
   return config;
 }
